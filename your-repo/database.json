@@ -116,6 +116,18 @@
             "status": "pending",
             "payment_proof": "عکس رسید پرداخت",
             "date": "2025-04-26 03:50:21"
+        },
+        "11": {
+            "user_id": 7229123341,
+            "username": "Dreamadmins",
+            "first_name": "𝗗𝗿𝗲𝗮𝗺 • 𝗣𝘃",
+            "last_name": "بدون نام خانوادگی",
+            "product_id": "3",
+            "product_name": "Android Visual",
+            "price": "299,000 تومان",
+            "status": "pending",
+            "payment_proof": "عکس رسید پرداخت",
+            "date": "2025-04-28 13:04:28"
         }
     },
     "user_messages": {
@@ -131,5 +143,18 @@
             "username": "matin_fft",
             "message": "کیر"
         }
+    },
+    "discount_codes": {
+        "DREAM50": {
+            "percentage": 50,
+            "remaining_uses": 9,
+            "active": true,
+            "created_at": "2025-04-29 07:43:23"
+        }
+    },
+    "stats": {
+        "total_users": 0,
+        "total_orders": 0,
+        "total_sales": 0
     }
 }

@@ -1,0 +1,39 @@
+# فایل‌های پایتون
+__pycache__/
+*.py[cod]
+*$py.class
+
+# محیط‌های مجازی
+venv/
+env/
+.myenv/
+.venv/
+
+# فایل‌های محیطی (حساس)
+.env
+.env.local
+.env.development
+.env.production
+
+# فایل‌های سیستم و ادیتور
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# لاگ‌ها و دیتابیس‌های محلی
+*.log
+*.sqlite
+*.db
+
+# فایل‌های تولید شده
+*.pid
+*.seed
+
+# فایل‌های نصب
+pip-delete-this-directory.txt
+
+# فایل‌های کش
+.pytest_cache/
+.mypy_cache/
