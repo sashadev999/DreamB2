@@ -1,8 +1,0 @@
-PyQt6==6.6.1
-PyQt6-Qt6==6.6.1
-PyQt6-sip==13.6.0
-python-telegram-bot==20.7
-Pillow==9.5.0
-urllib3==1.26.15
-certifi==2023.7.22
-python-dotenv==1.0.0 
