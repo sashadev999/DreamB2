@@ -14,6 +14,10 @@ import os
 from datetime import datetime, timedelta
 import traceback
 import sys
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # تنظیمات لاگینگ
 logging.basicConfig(
@@ -27,8 +31,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # توکن ربات و آیدی ادمین
-TOKEN = '7924870342:AAHq4DCOs2JuuPyxLmf8osQoVsjdZKX50_Y'
-ADMIN_ID = 7058515436
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+ADMIN_ID = int(os.getenv('ADMIN_ID', '7058515436'))
 
 # حالت‌های گفتگو
 (
@@ -43,7 +47,7 @@ ADMIN_ID = 7058515436
 ) = range(22)
 
 # دیتابیس ساده
-DB_FILE = 'database.json'
+DB_FILE = os.getenv('DB_FILE', 'database.json')
 
 # اطلاعات پیش‌فرض
 DEFAULT_DATA = {
@@ -81,9 +85,9 @@ DEFAULT_DATA = {
     },
     'discount_codes': {},
     'bank_info': {
-        'card_number': '6104-3386-4447-6687',
-        'card_holder': 'سبحان پرهیزکار',
-        'bank_name': 'ملت'
+        'card_number': os.getenv('BANK_CARD_NUMBER', '6104-3386-4447-6687'),
+        'card_holder': os.getenv('BANK_CARD_HOLDER', 'سبحان پرهیزکار'),
+        'bank_name': os.getenv('BANK_NAME', 'ملت')
     },
     'orders': {},
     'user_messages': {},
