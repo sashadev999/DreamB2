@@ -49,39 +49,12 @@ DB_FILE = 'database.json'
 DEFAULT_DATA = {
     'products': {
         '1': {
-            'name': 'Prime PC',
-            'description': 'سرویس پرمیوم مخصوص کامپیوتر\n- تک کاربره\n- سرعت بالا\n-ضد بن و کاملا امن\n- پشتیبانی 24/7',
-            'price': '299,000 تومان',
-            'image': None,
-            'category': 'pc',
-            'stock': 100,
-            'views': 0,
-            'reviews': []
-        },
-        '2': {
-            'name': 'Lite PC',
-            'description': 'سرویس لایت مخصوص کامپیوتر\n- تک کاربره\n- سرعت متوسط\n-ضد بن و کاملا امن\n- پشتیبانی 24/7',
-            'price': '199,000 تومان',
-            'image': None,
-            'category': 'pc',
-            'stock': 100,
-            'views': 0,
-            'reviews': []
-        },
-        '3': {
-            'name': 'Android Visual',
-            'description': 'سرویس مخصوص اندروید\n-تک کاربره\n- درانواع رنگ ها\n-ضد بن و کاملا امن\n- پشتیبانی 24/7',
-            'price': '299,000 تومان',
-            'image': None,
-            'category': 'android',
-            'stock': 100,
-            'views': 0,
-            'reviews': []
+
         }
     },
     'discount_codes': {},
     'bank_info': {
-        'card_number': '6104-3386-4447-6687',
+        'card_number': '" 6104-3386-4447-6687 "',
         'card_holder': 'سبحان پرهیزکار',
         'bank_name': 'ملت'
     },
@@ -243,7 +216,7 @@ async def payment_without_discount(update: Update, context: ContextTypes.DEFAULT
 💰 مبلغ قابل پرداخت: {order['price']}
 
 💳 اطلاعات پرداخت:
-شماره کارت: {db['bank_info']['card_number']}
+شماره کارت: {db[' bank_info '][' card_number ']}
 به نام: {db['bank_info']['card_holder']}
 بانک: {db['bank_info']['bank_name']}
 
